@@ -24,8 +24,6 @@ https://g4lvan.github.io/demo_page_colegio.github.io/
 
 ---
 
----
-
 # 📸 Preview del diseño
 
 ### Versión Desktop
@@ -90,8 +88,6 @@ Posibles tecnologías futuras:
 
 ---
 
----
-
 # 📱 Diseño Responsive
 
 El sitio está optimizado para distintos tamaños de pantalla:
@@ -153,4 +149,3 @@ Proyecto desarrollado como iniciativa personal para mejorar la presencia digital
 # 📜 Licencia
 
 Este proyecto se distribuye bajo licencia **MIT**.
-
