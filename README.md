@@ -34,7 +34,12 @@ https://g4lvan.github.io/demo_page_colegio.github.io/
 
 ![Mobile Preview](preview/mobile.png)
 
+### Versión Tablet
+
+![Mobile Preview](preview/tablet.png)
+
 ---
+
 # 📲 Responsive
 
 ![Responsive Preview](preview/responsive.gif)
