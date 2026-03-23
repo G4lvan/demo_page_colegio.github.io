@@ -1,0 +1,446 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/*Se definen las variables de color de la pagina para aplicar en los demás estilos */
+:root {
+  --primary-color: #029642;
+  --primary-alt: #1ba055;
+  --primary-soft-bg: #e5f4ec;
+  --primary-soft-border: #b8e2ca;
+  --primary-hover: #05bd55;
+  --primary-dark: #18583d;
+  --primary-light: #5c9d76;
+  --primary-light-transparent: #5c9d768f;
+  --placeholder: #a3d9bb;
+  --background: #ffffff;
+  --background-dark: #f5f6f7;
+  --background-secondary: #f1f5f9;
+  --complementary-color: #e2e8f0;
+  --text-primary: #000000;
+  --text-secondary: #ffffff;
+  --text-secondary-dark: #3d4147;
+  --text-muted: #798290;
+  --font-primary: "Nunito", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+}
+
+/* Estilos para el header y la Navbar
+    -Se posiciona el logo y los botones de navegación
+*/
+
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 2rem;
+  border-bottom: 1px solid var(--text-secondary);
+}
+
+header .izquierda {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+
+header .links_navegacion {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+}
+
+header .links_navegacion ul {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  list-style: none;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+header .links_navegacion a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+header .links_navegacion a:hover {
+  color: var(--primary-hover);
+}
+
+h1 {
+  font-size: 2rem;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: -1px;
+}
+
+.titulo {
+  display: flex;
+  color: var(--primary-color);
+}
+
+.logo {
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  margin-right: 0.5rem;
+  margin-left: 2rem;
+}
+
+/*Se estilizan los botones de acción
+  -Se estiliza el formulario de busqueda
+  -Se estiliza el boton de iniciar sesión
+*/
+
+.botones_acción {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.busqueda {
+  font-family: var(--font-primary);
+  background-color: var(--background-dark);
+  display: flex;
+  border-radius: 100px;
+  position: relative;
+  align-items: center;
+  margin-right: 2rem;
+  overflow: hidden;
+}
+
+.busqueda input[type="search"] {
+  font-family: var(--font-primary);
+  justify-content: center;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  background-color: var(--background-dark);
+  color: var(--text-muted);
+}
+
+.busqueda input[type="search"]:focus {
+  border: none;
+  outline: none;
+}
+
+.input_notis:focus {
+  border: none;
+  outline: none;
+}
+
+.icon-search {
+  stroke: var(--text-muted);
+  margin-left: 25px;
+  margin-right: 10px;
+}
+
+/*Estilos Main*/
+
+main {
+  background-color: var(--background-dark);
+  padding: 7rem;
+  padding-top: 0;
+}
+
+/*Estilos de la sección del titulo y la busqueda
+-Se estiliza el titulo y subtitulo
+-Se estiliza formulario de busqueda
+-Se estilizan las categorías de busqueda
+*/
+
+/*Titulo y subtitulo*/
+
+.header_main {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.header_main h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.header_main p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-bottom: 2rem;
+  color: var(--text-secondary-dark);
+}
+
+/*Se estiliza el footer de la pagina
+-Se define el estilo del footer, para proporcionar información de contacto, enlaces a redes sociales y otros detalles relevantes sobre la institución
+*/
+footer {
+  padding: 50px 100px;
+}
+
+footer .principal_footer {
+  background-color: var(--background);
+  align-items: start;
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+  gap: 100px;
+}
+
+.principal_footer header {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  max-width: 250px;
+  justify-content: center;
+}
+
+.info_footer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 10px;
+}
+
+.info_footer h2 {
+  font-size: 1.2rem;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  font-weight: 900;
+}
+
+.info_footer p {
+  margin-left: 50px;
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 400px;
+}
+
+.info_footer img {
+  display: flex;
+  max-width: 30px;
+  margin: 0;
+  margin-left: 50px;
+  padding: 0;
+}
+
+/*Links de acceso rapido*/
+
+.botones_footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.botones_footer h3 {
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.botones_footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.botones_footer li {
+  margin-bottom: 5px;
+}
+
+.botones_footer li a {
+  text-decoration: none;
+  color: var(--text-muted);
+}
+
+.botones_footer li a:hover {
+  color: var(--primary-hover);
+}
+
+/*Redes de la institución*/
+
+.redes_footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redes_footer h3 {
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.red_icon_footer {
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: var(--text-primary);
+  background-color: var(--primary-light-transparent);
+  padding: 5px;
+  border-radius: 100%;
+}
+
+.red_icon_footer:hover {
+  background-color: var(--primary-hover);
+}
+
+/*Linea del footer con los derechos de la institución*/
+
+.line_footer hr {
+  max-width: 90%;
+  color: var(--text-muted);
+}
+
+.line_footer p {
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 40px;
+}
+
+/* Estilos Responsive de la pagina
+-Se adapta el diseño para tablets y celulares
+-Se corrigen tamaños de texto, grids y elementos
+-Se mantiene la navbar con el mismo diseño
+*/
+
+@media (max-width: 1024px) {
+  /* Footer más compacto */
+  footer .principal_footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* HEADER limpio tipo app */
+  header {
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /*Se reduce el espacio entre el logo y los links*/
+  header .izquierda {
+    gap: 1rem;
+  }
+
+  /*Se reduce el tamaño del título de la institución*/
+  header h1 {
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+  }
+
+  /*Se reduce el tamaño del logo*/
+  .logo {
+    height: 40px;
+    margin-left: 0;
+  }
+
+  /*Se ajusta el espacio entre los links de navegación*/
+  .links_navegacion {
+    font-size: 0.9rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /*Se ajusta el tamaño del buscador*/
+  .botones_accion {
+    width: auto;
+  }
+
+  .busqueda {
+    margin-right: 0;
+  }
+
+  .busqueda input[type="search"] {
+    width: 120px;
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .header_main {
+    padding: 1rem 0;
+  }
+
+  .header_main h2 {
+    font-size: 1.8rem;
+  }
+
+  .header_main p {
+    font-size: 1rem;
+  }
+  footer {
+    padding: 2rem 1rem;
+  }
+
+  footer .principal_footer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .info_footer p,
+  .info_footer img {
+    margin-left: 0;
+  }
+
+  .botones_footer {
+    grid-template-columns: 1fr;
+  }
+
+  .redes_footer {
+    align-items: flex-start;
+  }
+
+  .mas_noticias {
+    gap: 10px;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .svg_more {
+    padding: 6px;
+    border-radius: 8px;
+  }
+
+  .chev_more {
+    width: 16px;
+    height: 16px;
+  }
+
+  .more_notis {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}
