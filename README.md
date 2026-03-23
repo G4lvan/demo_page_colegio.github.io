@@ -1,10 +1,20 @@
-# 🎓 Rediseño Web – Institución Educativa Municipal Emilio Cifuentes
+<div align="center">
 
 ![Status](https://img.shields.io/badge/status-MVP-blue)
 ![Responsive](https://img.shields.io/badge/responsive-yes-green)
 ![HTML](https://img.shields.io/badge/HTML5-structure-orange)
 ![CSS](https://img.shields.io/badge/CSS3-styling-blue)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
+<a href="https://g4lvan.github.io/demo_page_colegio.github.io/" target="_blank" rel="noopener noreferrer">
+  <img width="300px" src="assets/logos/EMILIO.png" alt="Logo" width="800" />
+</a>
+
+# 🎓 Rediseño Web – Institución Educativa Municipal Emilio Cifuentes
+
+</div>
+
+---
 
 Proyecto enfocado en el **rediseño y mejora de la experiencia digital** del sitio web institucional de la  
 **Institución Educativa Municipal Emilio Cifuentes**.
