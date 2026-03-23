@@ -14,8 +14,6 @@
 
 </div>
 
----
-
 Proyecto enfocado en el **rediseño y mejora de la experiencia digital** del sitio web institucional de la  
 **Institución Educativa Municipal Emilio Cifuentes**.
 
