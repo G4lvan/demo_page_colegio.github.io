@@ -54,7 +54,7 @@ El sitio actual presenta varios problemas de experiencia de usuario:
 El rediseño propone una mejora integral enfocada en el usuario:
 
 - Interfaz moderna y limpia
-- Diseño responsive (mobile-first)
+- Diseño responsive
 - Mejor organización del contenido
 - Jerarquía visual clara
 - Navegación más intuitiva y accesible
@@ -118,7 +118,6 @@ El desarrollo del proyecto se basa en:
 - Análisis del sitio existente
 - Identificación de problemas de UX/UI
 - Priorización de mejoras
-- Implementación bajo enfoque **mobile-first**
 - Uso de buenas prácticas en HTML y CSS
 
 ---
@@ -127,7 +126,7 @@ El desarrollo del proyecto se basa en:
 
 - Diseño moderno y limpio
 - Navegación clara e intuitiva
-- Layout responsive (mobile-first)
+- Layout responsive
 - Mejor jerarquía visual
 - Estructura HTML optimizada
 - Base escalable para futuras mejoras
@@ -139,7 +138,6 @@ El desarrollo del proyecto se basa en:
 - **HTML5**
 - **CSS3**
 - **Responsive Design**
-- **Mobile-first layout**
 
 Posibles tecnologías futuras:
 
@@ -159,7 +157,7 @@ El sitio está optimizado para distintos tamaños de pantalla:
 - 💻 Laptops
 - 🖥 Escritorio
 
-Se implementan técnicas modernas como **Flexbox, Grid y Mobile-first design**.
+Se implementan técnicas modernas como **Flexbox y Grid**.
 
 ---
 
