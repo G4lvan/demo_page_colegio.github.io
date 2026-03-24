@@ -1,10 +1,10 @@
 <div align="center">
 
-![Status](https://img.shields.io/badge/status-MVP-blue)
-![Responsive](https://img.shields.io/badge/responsive-yes-green)
-![HTML](https://img.shields.io/badge/HTML5-structure-orange)
-![CSS](https://img.shields.io/badge/CSS3-styling-blue)
-![License](https://img.shields.io/badge/license-MIT-lightgrey)
+![Status](https://img.shields.io/badge/MVP-blue?style=for-the-badge&label=Status&labelColor=gray)
+![Responsive](https://img.shields.io/badge/Responsive-green?style=for-the-badge)
+![HTML](https://img.shields.io/badge/Structure-gray?style=for-the-badge&logo=HTML5&logoColor=white&label=HTML5&labelColor=orange&color=gray)
+![CSS](https://img.shields.io/badge/Styling-blue?style=for-the-badge&logo=CSS&logoColor=white&label=CSS3&labelColor=blue&color=gray)
+![License](https://img.shields.io/badge/MIT-gray?style=for-the-badge&label=License&labelColor=black&color=gray)
 
 <a href="https://g4lvan.github.io/demo_page_colegio.github.io/" target="_blank" rel="noopener noreferrer">
   <img width="300px" src="assets/logos/EMILIO.png" alt="Logo" width="800" />
