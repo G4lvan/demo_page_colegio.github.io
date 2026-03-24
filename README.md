@@ -141,8 +141,9 @@ El desarrollo del proyecto se basa en:
 
 Posibles tecnologías futuras:
 
-- Astro
-- React
+![Astro](https://img.shields.io/badge/Astro-red?style=for-the-badge&logo=ASTRO&logoColor=red&labelColor=black)
+![Static Badge](https://img.shields.io/badge/React-blue?style=for-the-badge&logo=REACT&logoColor=blue&labelColor=black)
+
 - CMS para gestión de contenido
 - Integración de calendario institucional
 
