@@ -201,6 +201,35 @@ main {
   color: var(--text-secondary-dark);
 }
 
+/**Se estilizan las cards con contenido*/ 
+/**-Estilos de SVG*/
+/**-Estilos generales*/
+/**-Estilos Titulo e información*/
+
+.cards_sections{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card_info{
+  max-width: 300px;
+  max-height: 350px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: var(--background);
+}
+
+.info_icon{
+  width: 34px;
+  height: 34px;
+}
+
+.link_icon{
+  width: 12px;
+  height: 12px;
+}
+
 /*Se estiliza el footer de la pagina
 -Se define el estilo del footer, para proporcionar información de contacto, enlaces a redes sociales y otros detalles relevantes sobre la institución
 */
