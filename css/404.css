@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* * ============================================================
+   TOKENS GLOBALES
+   Variables compartidas de color y tipografía para mantener consistencia visual.
+   ============================================================ */
+:root {
+  --primary-color: #029642;
+  --primary-alt: #1ba055;
+  --primary-soft-bg: #e5f4ec;
+  --primary-soft-border: #b8e2ca;
+  --primary-hover: #05bd55;
+  --primary-dark: #18583d;
+  --primary-light: #5c9d76;
+  --primary-light-transparent: #5c9d768f;
+  --placeholder: #a3d9bb;
+  --background: #ffffff;
+  --background-dark: #f5f6f7;
+  --background-secondary: #f1f5f9;
+  --complementary-color: #e2e8f0;
+  --text-primary: #000000;
+  /* * — Tokens de formulario */
+  --text-form: #747c74;
+  --text-secondary-light: #b8e0c4;
+  /* * — Tipografía base */
+  --text-secondary: #ffffff;
+  --text-secondary-dark: #3d4147;
+  --text-muted: #798290;
+  --font-primary: "Nunito", sans-serif;
+}
+
+/* * ============================================================
+   BASE
+   Reset mínimo y tipografía general de la página.
+   ============================================================ */
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+}
+
+main {
+  padding: 7rem;
+  padding-top: 0;
+  background-color: var(--background-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.icon_404 {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  color: var(--primary-light-transparent);
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.info h2 {
+  font-size: 10rem;
+  margin: 0;
+  padding: 0;
+  margin-top: -20px;
+  color: var(--primary-alt);
+  text-shadow: -18px -15px var(--placeholder);
+}
+
+.info h3 {
+  padding: 10px;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.info p {
+  color: var(--text-form);
+  padding: 10px;
+  margin-top: -10px;
+  max-width: 70%;
+  text-align: center;
+}
+
+.info a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 30px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--background);
+}
+
+.a_404_icon {
+  width: 25px;
+  height: 25px;
+}
+
+.info a:hover {
+  background-color: var(--primary-hover);
+}
+
+/* * ============================================================
+  RESPONSIVE — 404 (solo contenido)
+  Media queries para .main y .info de la página 404.
+  Header y footer manejados en styles.css.
+  Breakpoints: tablet (768px), mobile (480px).
+  ============================================================ */
+
+/* * — Tablet (≤ 768px) */
+@media (max-width: 768px) {
+  main {
+    padding: 4rem 2rem;
+  }
+
+  .info h2 {
+    font-size: 7rem;
+    /* ? text-shadow reajustado proporcionalmente al font-size reducido
+       para que el efecto de sombra no se vea desplazado. */
+    text-shadow: -12px -10px var(--placeholder);
+  }
+
+  .info h3 {
+    font-size: 1.5rem;
+  }
+
+  .info p {
+    max-width: 90%;
+  }
+}
+
+/* * — Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  main {
+    padding: 3rem 1.5rem;
+  }
+
+  .icon_404 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .info h2 {
+    font-size: 5rem;
+    text-shadow: -8px -7px var(--placeholder);
+  }
+
+  .info h3 {
+    font-size: 1.2rem;
+  }
+
+  .info p {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .info a {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
