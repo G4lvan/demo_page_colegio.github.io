@@ -495,12 +495,14 @@ button:hover .mas_descargas {
 
 .modal.activo {
   display: flex;
+  position: fixed;
+  top: 15vh;
+  left: 50%;
+  width: 95%;
+  transform: translateX(-50%);
   justify-content: center;
   align-items: center;
-  position: fixed;
-  inset: 0;
-  z-index: 20;
-  height: 100vh;
+  z-index: 11;
 }
 
 .modal main {
@@ -589,7 +591,7 @@ button:hover .mas_descargas {
   color: var(--primary-hover);
 }
 
-.descargas_archivos a:hover{
+.descargas_archivos a:hover {
   background-color: var(--background-dark);
   border-radius: 5px;
 }
