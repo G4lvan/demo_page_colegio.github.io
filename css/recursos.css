@@ -410,6 +410,10 @@ main {
   border-radius: 10px;
 }
 
+.descargas a:hover .archivo_icon_descargas {
+  color: var(--primary-hover);
+}
+
 .descargas h3 {
   font-size: 1rem;
   font-weight: 800;
@@ -432,11 +436,7 @@ main {
   color: var(--text-muted);
 }
 
-.archivo_icon_descargas:hover {
-  color: var(--primary-color);
-}
-
-.tipo_icon_descargas {
+.tipo_icon_descargas_pdf {
   color: var(--pdf-color);
 }
 
@@ -471,6 +471,175 @@ main {
 button:hover .mas_descargas {
   color: var(--background);
 }
+
+/* * - Modal descargas */
+
+.modal,
+.overlay_download {
+  display: none;
+}
+
+.overlay_download.activo {
+  display: block;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  z-index: 10;
+}
+
+.close_downloads {
+  border: none;
+  background: none;
+}
+
+.modal.activo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal main {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background);
+}
+
+.body-modal {
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  width: 100%;
+  max-width: 50%;
+  border-radius: 15px;
+}
+
+.head-modal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--complementary-color);
+}
+
+.principal_icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.modal-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.header-icon-close:hover {
+  color: var(--primary-alt);
+  cursor: pointer;
+}
+
+.header-icon {
+  color: var(--primary-color);
+  width: 25px;
+  height: 25px;
+}
+
+.header-icon-close {
+  color: var(--text-muted);
+  width: 25px;
+  height: 25px;
+}
+
+/**Main Modal*/
+
+.descargas_archivos {
+  max-height: calc(100px * 3);
+  overflow: auto;
+}
+
+.descargas_archivos svg {
+  width: 30px;
+  height: 30px;
+}
+
+.descargas_archivos a {
+  display: flex;
+  gap: 10px;
+  font-size: 0.8rem;
+  padding: 20px;
+  min-width: 95%;
+  min-height: 90%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-secondary-dark);
+}
+
+.descargas_archivos:first-child {
+  margin-top: 20px;
+}
+
+.descargas_archivos a:hover .archivo_icon_descargas {
+  color: var(--primary-hover);
+}
+
+.body-modal main h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.info_des {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.descargas_archivos a svg {
+  width: 30px;
+  height: 30px;
+}
+
+.archivo_icon_descargas {
+  margin-left: auto;
+  color: var(--text-muted);
+}
+
+.tipo_icon_descargas_pdf {
+  color: var(--pdf-color);
+}
+
+.tipo_icon_descargas_word {
+  color: var(--docx-color);
+}
+
+.tipo_icon_descargas_excel {
+  color: var(--primary-alt);
+}
+
+/* * — Scroll interno del modal */
+.descargas_archivos::-webkit-scrollbar {
+  width: 10px;
+}
+
+.descargas_archivos::-webkit-scrollbar-track {
+  background: var(--background-dark);
+  border-radius: 10px;
+}
+
+.descargas_archivos::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+.descargas_archivos::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-hover);
+}
+
+/* * - Fin modal descargas */
 
 /* * ============================================================
    FOOTER
@@ -643,6 +812,11 @@ footer .principal_footer {
     width: 100%;
     text-align: center;
   }
+
+  .body-modal {
+    max-width: 75%;
+  }
+
   /* * — /CONTENIDO ÚNICO — recursos.css */
 
   /* * — Footer principal */
@@ -722,6 +896,19 @@ footer .principal_footer {
   .mas_archivos {
     width: 70%;
   }
+
+  .body-modal {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .modal-title {
+    font-size: 1.1rem;
+  }
+
+  .descargas_archivos {
+    max-height: calc(100px * 4);
+  }
   /* * — /CONTENIDO ÚNICO — recursos.css */
 
   /* * — Footer principal */
@@ -781,6 +968,29 @@ footer .principal_footer {
 
   .card_pruebas p {
     font-size: 0.95rem;
+  }
+
+  .body-modal {
+    max-width: 95%;
+    padding: 1rem;
+  }
+
+  .modal-title {
+    font-size: 1rem;
+  }
+
+  .descargas_archivos a {
+    padding: 14px 10px;
+    font-size: 0.75rem;
+  }
+
+  .descargas_archivos svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .body-modal main h3 {
+    font-size: 0.9rem;
   }
   /* * — /CONTENIDO ÚNICO — recursos.css */
 }
