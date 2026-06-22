@@ -497,6 +497,9 @@ button:hover .mas_descargas {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  inset: 0;
+  z-index: 20;
   height: 100vh;
 }
 
