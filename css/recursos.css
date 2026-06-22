@@ -536,7 +536,7 @@ button:hover .mas_descargas {
 
 .modal-title {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .header-icon-close:hover {
@@ -587,6 +587,11 @@ button:hover .mas_descargas {
 
 .descargas_archivos a:hover .archivo_icon_descargas {
   color: var(--primary-hover);
+}
+
+.descargas_archivos a:hover{
+  background-color: var(--background-dark);
+  border-radius: 5px;
 }
 
 .body-modal main h3 {
